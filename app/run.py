@@ -4,11 +4,10 @@ from app.domain.model import Usuario
 
 user = Usuario()
 #Informacion del usuario, con un diccionario
-user.Apellido = "Aley"
-user.Nombre = "Jose"
-user.Username = "JAley"
+info = {"Username":"JAley", "Nombre":"Jose", "Apellido":"Aley"}
+user.load(info)
 
 
-file.create_file("nuevo.txt", user)
+print(file.create_file("nuevo.txt", user))
 
 print('Iniciando')
