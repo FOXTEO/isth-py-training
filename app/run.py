@@ -3,10 +3,11 @@ from app.domain.model import Usuario
 
 
 user = Usuario()
-#Informacion del usuario
+#Informacion del usuario, con un diccionario
 user.Apellido = "Aley"
 user.Nombre = "Jose"
 user.Username = "JAley"
+
 
 file.create_file("nuevo.txt", user)
 
